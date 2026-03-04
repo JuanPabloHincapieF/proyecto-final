@@ -1,0 +1,20 @@
+<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+<defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#00e5ff;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#ff3cac;stop-opacity:1" />
+    </linearGradient>
+</defs>
+<circle cx="70" cy="70" r="60" fill="none" stroke="url(#g1)" stroke-width="2"/>
+<circle cx="70" cy="70" r="40" fill="none" stroke="url(#g1)" stroke-width="1" opacity=".5"/>
+<circle cx="70" cy="70" r="20" fill="none" stroke="url(#g1)" stroke-width="1" opacity=".3"/>
+<circle cx="70" cy="70" r="5" fill="url(#g1)"/>
+<line x1="70" y1="10" x2="70" y2="50" stroke="url(#g1)" stroke-width="1.5"/>
+<line x1="70" y1="90" x2="70" y2="130" stroke="url(#g1)" stroke-width="1.5"/>
+<line x1="10" y1="70" x2="50" y2="70" stroke="url(#g1)" stroke-width="1.5"/>
+<line x1="90" y1="70" x2="130" y2="70" stroke="url(#g1)" stroke-width="1.5"/>
+<circle cx="70" cy="10" r="4" fill="#00e5ff"/>
+<circle cx="70" cy="130" r="4" fill="#00e5ff"/>
+<circle cx="10" cy="70" r="4" fill="#00e5ff"/>
+<circle cx="130" cy="70" r="4" fill="#00e5ff"/>
+</svg>

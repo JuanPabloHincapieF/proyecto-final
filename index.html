@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelCraft Studio — Diseño & Tecnología Digital</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="grid-bg">
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <nav id="navbar">
+    <a href="#hero" class="nav-brand">Proyecto<span> Final</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#vectorial">Vectorial</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#audio-section">Audio</a></li>
+      <li><a href="#tabla">Tabla</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <i class="bi bi-list"></i>
+    </button>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-glow"></div>
+    <div style="position:relative; z-index:1;">
+      <p class="hero-eyebrow">// Diseño web y recs informático COM-333ES-AVOL1</p>
+      <h1 class="hero-title">
+        Proyecto<br>
+        <span class="line-accent">Final</span><br>
+        <span class="line-accent2">Juan Pablo Hincapie</span>
+      </h1>
+      <p class="hero-sub">
+          Este sitio web presenta una colección de proyectos de diseño digital realizados a lo largo del curso.
+          Explora las secciones para descubrir mis trabajos en fotografía, diseño vectorial, producción de video y audio digital.
+      </p>
+      <a href="#galeria" class="hero-cta">
+        <i class="bi bi-arrow-down-right"></i> Ver proyectos
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="about">
+    <div class="container">
+      <div class="row gy-5 align-items-center">
+        <div class="col-lg-6 reveal">
+          <p class="section-label">// 01 — Sobre el proyecto</p>
+          <h2 class="section-title">Diseño<br>con propósito</h2>
+          <p class="section-desc">
+            Este sitio reúne los conocimientos adquiridos a lo largo del curso de
+            <strong style="color:var(--text)">Diseño web y recs informáticos</strong>:
+            fotografía digital, imagen vectorial y audio digital. Cada pieza fue
+            creada con atención al detalle y principios sólidos de composición.
+          </p>
+          <p style="color:var(--muted); font-size:0.88rem;">
+            Proyecto final desarrollado bajo los valores de integridad de
+            <strong style="color:var(--text)">Saint Leo University</strong>.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-cell">
+              <div class="stat-num" id="count-photos">0</div>
+              <div class="stat-label">Fotografías</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-num" id="count-vectors">0</div>
+              <div class="stat-label">Vectoriales</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-num" id="count-tracks">0</div>
+              <div class="stat-label">Pistas de Audio</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <div style="border:1px solid var(--border); border-radius:4px; overflow:hidden;">
+            <img src="img/profile_picture.jpg"
+                 alt="profile picture"
+                 style="width:100%; height:540px; object-fit:cover; display:block;"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div style="display:none; width:100%; height:540px; background:var(--surface);
+                        align-items:center; justify-content:center; flex-direction:column;
+                        gap:0.5rem; color:var(--muted);">
+              <i class="bi bi-image" style="font-size:2.5rem; color:var(--border);"></i>
+              <span style="font-size:0.8rem;">img/about.jpg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="reveal mt-5">
+        <p class="section-label mb-3">// Herramientas y tecnologías</p>
+        <div class="skills-grid">
+          <div class="skill-chip"><i class="bi bi-camera"></i>Fotografía</div>
+          <div class="skill-chip"><i class="bi bi-bezier2"></i>Vectorial</div>
+          <div class="skill-chip"><i class="bi bi-music-note-beamed"></i>Audio</div>
+          <div class="skill-chip"><i class="bi bi-filetype-html"></i>HTML5</div>
+          <div class="skill-chip"><i class="bi bi-filetype-css"></i>CSS3</div>
+          <div class="skill-chip"><i class="bi bi-filetype-js"></i>JavaScript</div>
+          <div class="skill-chip"><i class="bi bi-bootstrap"></i>Bootstrap</div>
+          <div class="skill-chip"><i class="bi bi-github"></i>GitHub Pages</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="vectorial">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">// 02 — Imagen vectorial</p>
+        <h2 class="section-title">Gráficos SVG<br>& Vectoriales</h2>
+
+      </div>
+
+      <div class="svg-showcase reveal">
+
+        <div class="svg-card">
+          <img src="img/vector1.svg" alt="Diseño vectorial 1"
+               style="max-width:140px;"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="svg-card-title">Diseño 01</span>
+        </div>
+
+        <div class="svg-card">
+          <img src="img/vector2.svg" alt="Diseño vectorial 2"
+               style="max-width:140px;"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="svg-card-title">Diseño 02</span>
+        </div>
+
+        <div class="svg-card">
+          <img src="img/vector3.svg" alt="Diseño vectorial 3"
+               style="max-width:140px;"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <svg viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+            <defs>
+              <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#00e5ff"/>
+                <stop offset="50%" style="stop-color:#ff3cac"/>
+                <stop offset="100%" style="stop-color:#ffe600"/>
+              </linearGradient>
+            </defs>
+            <path d="M10,40 Q25,10 40,40 Q55,70 70,40 Q85,10 100,40 Q115,70 130,40"
+                  fill="none" stroke="url(#g3)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M10,40 Q25,20 40,40 Q55,60 70,40 Q85,20 100,40 Q115,60 130,40"
+                  fill="none" stroke="url(#g3)" stroke-width="1.5" opacity=".4" stroke-linecap="round"/>
+          </svg>
+          <span class="svg-card-title">Diseño 03</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="galeria">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">// 03 — Fotografía digital</p>
+        <h2 class="section-title">Galería<br>Fotográfica</h2>
+        <p class="section-desc">
+          Esta es una galería de fotografías digitales editadas. Fotos que he tomado en diferentes viajes y lugares en los que he estado.
+        </p>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="img/photo1.jpg" alt="Fotografía 1">
+          <div class="gallery-overlay"><span class="gallery-caption">Fotografía 01</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="img/photo2.jpg" alt="Fotografía 2">
+          <div class="gallery-overlay"><span class="gallery-caption">Fotografía 02</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="img/photo3.jpg" alt="Fotografía 3">
+          <div class="gallery-overlay"><span class="gallery-caption">Fotografía 03</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="img/photo4.jpg" alt="Fotografía 4">
+          <div class="gallery-overlay"><span class="gallery-caption">Fotografía 04</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="img/photo5.jpg" alt="Fotografía 5">
+          <div class="gallery-overlay"><span class="gallery-caption">Fotografía 05</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="img/photo6.jpg" alt="Fotografía 6">
+          <div class="gallery-overlay"><span class="gallery-caption">Fotografía 06</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="img/photo7.jpg" alt="Fotografía 7">
+          <div class="gallery-overlay"><span class="gallery-caption">Fotografía 07</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="img/photo8.jpg" alt="Fotografía 8">
+          <div class="gallery-overlay"><span class="gallery-caption">Fotografía 08</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada">
+    <button id="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar">
+      <i class="bi bi-x"></i>
+    </button>
+    <img id="lightbox-img" src="" alt="Imagen ampliada">
+  </div>
+
+  <hr class="divider">
+
+  <section id="video">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">// 04 — Video</p>
+        <h2 class="section-title">Video que recomiendo</h2>
+        <p class="section-desc">
+          Este es un video que recomiendo y que publique en uno de los foros de discusión.
+        </p>
+      </div>
+
+      <div class="row gy-4 align-items-stretch reveal">
+        <div class="col-lg-8">
+          <div class="video-wrapper">
+          <iframe src="https://www.youtube-nocookie.com/embed/vSQjk9jKarg?start=2&rel=0" title="Video recomendado"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="video-info">
+            <span class="video-tag">Video recomendado</span>
+            <h3 style="font-family:var(--font-head); font-size:1.35rem; margin-bottom:0.75rem;">
+              What is the secret of a good life? Lessons from the longest study on happiness
+            </h3>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:1.5rem;">
+              How to lead a happier, healthier and longer life.
+            </p>
+            <div style="display:flex; flex-direction:column; gap:0.75rem;">
+              <div style="display:flex; align-items:center; gap:0.75rem; font-size:0.82rem;">
+                <i class="bi bi-camera-video" style="color:var(--accent);"></i>
+                <span style="color:var(--muted);">Formato:</span>
+                <span>MP4 / YouTube</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:0.75rem; font-size:0.82rem;">
+                <i class="bi bi-clock" style="color:var(--accent);"></i>
+                <span style="color:var(--muted);">Duración:</span>
+                <span>~23:25 min</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:0.75rem; font-size:0.82rem;">
+                <i class="bi bi-person" style="color:var(--accent);"></i>
+                <span style="color:var(--muted);">Autor:</span>
+                <span>Veritasium</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="audio-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">// 05 — Audio digital</p>
+        <h2 class="section-title">Proyecto de<br>Audio Digital</h2>
+        <p class="section-desc">
+          Pistas de audio digital creada en este curso.
+        </p>
+      </div>
+
+      <div class="row gy-3 reveal">
+        <div class="col-12">
+          <div class="audio-player" id="ap1">
+            <div class="audio-track-info">
+              <div class="audio-icon"><i class="bi bi-music-note"></i></div>
+              <div>
+                <div class="audio-title">Pista 01</div>
+                <div class="audio-meta">
+                  <span class="tag">Audio Digital</span>
+                  <span class="tag ms-1">WAV / MP3</span>
+                </div>
+              </div>
+            </div>
+            <audio controls id="audio1" onplay="setPlaying('ap1')" onpause="setNotPlaying('ap1')">
+              <source src="audio/track1.mp3" type="audio/mpeg">
+              <source src="audio/track1.wav" type="audio/wav">
+              Tu navegador no soporta reproducción de audio.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="tabla">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">// 06 — Datos y comparativas</p>
+        <h2 class="section-title">Tabla de<br>Proyectos</h2>
+        <p class="section-desc">
+          Comparativa de los proyectos del curso: herramientas, formatos y
+          nivel de complejidad de cada entregable.
+        </p>
+      </div>
+
+      <div class="table-wrapper reveal">
+        <div class="table-filter">
+          <i class="bi bi-search" style="color:var(--muted);"></i>
+          <input
+            type="text"
+            class="filter-input"
+            id="table-search"
+            placeholder="Buscar proyecto..."
+            style="flex:1; min-width:180px;"
+            oninput="filterTable()"
+          >
+          <select class="filter-input" id="cat-filter" onchange="filterTable()" style="min-width:140px;">
+            <option value="">Todas las categorías</option>
+            <option value="Fotografía">Fotografía</option>
+            <option value="Vectorial">Vectorial</option>
+            <option value="Audio">Audio</option>
+            <option value="Web">Web</option>
+          </select>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" id="projects-table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0)" data-col="0"># <span class="sort-icon"></span></th>
+                <th onclick="sortTable(1)" data-col="1">Proyecto <span class="sort-icon"></span></th>
+                <th onclick="sortTable(2)" data-col="2">Categoría <span class="sort-icon"></span></th>
+                <th onclick="sortTable(3)" data-col="3">Herramienta <span class="sort-icon"></span></th>
+                <th onclick="sortTable(4)" data-col="4">Formato de salida <span class="sort-icon"></span></th>
+                <th onclick="sortTable(5)" data-col="5">Complejidad <span class="sort-icon"></span></th>
+                <th onclick="sortTable(6)" data-col="6">Estado <span class="sort-icon"></span></th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <tr>
+                <td style="color:var(--muted);">01</td>
+                <td><strong>Edición de imagen</strong></td>
+                <td><span class="badge-soft badge-cyan">Fotografía</span></td>
+                <td>Gimp</td>
+                <td>JPEG</td>
+                <td>
+                  <div class="bar-cell">
+                    <span>Alta</span>
+                    <div class="bar-track"><div class="bar-fill" style="width:85%;"></div></div>
+                  </div>
+                </td>
+                <td><span class="badge-soft badge-green">Completado</span></td>
+              </tr>
+              <tr>
+                <td style="color:var(--muted);">03</td>
+                <td><strong>Logotipo vectorial</strong></td>
+                <td><span class="badge-soft badge-yellow">Vectorial</span></td>
+                <td>Inkscape</td>
+                <td>SVG</td>
+                <td>
+                  <div class="bar-cell">
+                    <span>Alta</span>
+                    <div class="bar-track"><div class="bar-fill" style="width:90%; background:var(--accent3);"></div></div>
+                  </div>
+                </td>
+                <td><span class="badge-soft badge-green">Completado</span></td>
+              </tr>
+              <tr>
+                <td style="color:var(--muted);">05</td>
+                <td><strong>Composición musical — Pista 01</strong></td>
+                <td><span class="badge-soft badge-pink">Audio</span></td>
+                <td>Audacity / LMMS</td>
+                <td>MP3</td>
+                <td>
+                  <div class="bar-cell">
+                    <span>Alta</span>
+                    <div class="bar-track"><div class="bar-fill" style="width:80%; background:var(--accent2);"></div></div>
+                  </div>
+                </td>
+                <td><span class="badge-soft badge-green">Completado</span></td>
+              </tr>
+              <tr>
+                <td style="color:var(--muted);">08</td>
+                <td><strong>Sitio web — Proyecto final</strong></td>
+                <td><span class="badge-soft" style="background:rgba(0,255,140,0.1); color:#00ff8c;">Web</span></td>
+                <td>HTML / CSS / JS / Bootstrap</td>
+                <td>GitHub Pages</td>
+                <td>
+                  <div class="bar-cell">
+                    <span>Alta</span>
+                    <div class="bar-track"><div class="bar-fill" style="width:95%; background:#00ff8c;"></div></div>
+                  </div>
+                </td>
+                <td><span class="badge-soft badge-green">Completado</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-footer">
+          <span id="row-count">4 proyectos</span>
+          <span>Diseño web y recs informático COM-333ES-AVOL1 - Saint Leo University</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="contacto">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">// 07 — Contacto</p>
+        <h2 class="section-title">Contactame</h2>
+        <p class="section-desc">
+          Si deseas ponerte en contacto conmigo para discutir sobre mis proyectos, colaboraciones o cualquier consulta relacionada, no dudes en enviarme un mensaje utilizando el formulario a continuación. ¡Estoy abierto a nuevas oportunidades y conexiones!
+        </p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <div>
+          <div class="contact-form">
+            <input type="text"  class="form-control-dark" placeholder="Tu nombre" id="c-name">
+            <input type="email" class="form-control-dark" placeholder="tu@email.com" id="c-email">
+            <input type="text"  class="form-control-dark" placeholder="Asunto" id="c-subject">
+            <textarea class="form-control-dark" rows="5" placeholder="Tu mensaje..." id="c-message"></textarea>
+            <button class="btn-accent" onclick="handleContact()">
+              <i class="bi bi-send"></i> Enviar mensaje
+            </button>
+            <p id="form-msg" style="font-size:0.82rem; color:var(--accent); display:none; margin-top:0.5rem;"></p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-person-badge"></i></div>
+            <div>
+              <div class="contact-item-label">Estudiante</div>
+              <div class="contact-item-value">Juan Pablo Hincapie Forero</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-envelope"></i></div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">jphf0527@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-book"></i></div>
+            <div>
+              <div class="contact-item-label">Curso</div>
+              <div class="contact-item-value">Diseño web y recs informático COM-333ES-AVOL1</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-mortarboard"></i></div>
+            <div>
+              <div class="contact-item-label">Universidad</div>
+              <div class="contact-item-value">Saint Leo University</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-github"></i></div>
+            <div>
+              <div class="contact-item-label">Repositorio</div>
+              <div class="contact-item-value">
+                <a href="https://github.com/JuanPabloHincapieF/proyecto-final "
+                   target="_blank" rel="noopener noreferrer"
+                   style="color:var(--accent);">
+                  github.com/JuanPabloHincapieF/proyecto-final
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>— Juan Pablo Hincapie · Saint Leo University</span>
+    <span>
+      Diseñado con <span style="color:var(--accent2);">♥</span> ·
+      <a href="https://github.com/JuanPabloHincapieF" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </span>
+    <span></span>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
