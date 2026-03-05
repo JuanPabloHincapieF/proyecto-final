@@ -146,7 +146,7 @@ function handleContact() {
     return;
     }
     msg.style.color = 'var(--accent)';
-    msg.textContent = '✓ Mensaje enviado. (Nota: conecta un servicio como Formspree para envíos reales.)';
+    msg.textContent = '✓ Mensaje enviado';
     msg.style.display = 'block';
     ['c-name','c-email','c-subject','c-message'].forEach(id => document.getElementById(id).value = '');
 }
